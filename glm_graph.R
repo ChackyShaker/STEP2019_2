@@ -10,7 +10,7 @@ plot(step_2,type="l") #時間とN(入力数)の関係性のグラフ(線でつ�
 library(GGally)
 ggpairs(data.frame(step_2))
 df <- data.frame(step_2)
-ggplot(df,aes(x=mat.size,y=time.sec.))+geom_point()+geom_smooth()#geom_smooth:回帰線の追加
+ggplot(df,aes(x=mat.size,y=time.sec.))+geom_point()
 
 pdf("matsize_time.pdf",width = 8,height = 8)
 dev.off()
